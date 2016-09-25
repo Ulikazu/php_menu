@@ -13,7 +13,7 @@ $pages = array_splice($pages, 2);
 
 <header>
 	<div class="container">
-		<!-- we set the hyperlink reference to be equal to the hostname and subdirectory php_menu -->
+		<!-- we set the hyperlink reference to be equal to the hostname and subdirectory php_menu. the downside is that it assumes the index.php of the site is placed in exactly this path, and doesn't respect the use of subdomains -->
 		<a class="logo" href="<?= 'http://' . $_SERVER['HTTP_HOST'] . '/php_menu' ?>">Panels<sup>&copy;</sup></a>
 		<ul>
 			<?php 
