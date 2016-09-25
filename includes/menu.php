@@ -14,19 +14,22 @@ if (isset($_GET['page'])) {
 ?>
 
 <header>
-	<ul>
-		<?php 
+	<div class="container">
+		<a class="logo" href="<?= 'http://' . $_SERVER['HTTP_HOST']; ?>">Panels<sup>&copy;</sup></a>
+		<ul>
+			<?php 
 
-			foreach ($pages as $page) {
-				$page = basename($page,".php");
+				foreach ($pages as $page) {
+					$page = basename($page,".php");
 
-				?>
+					?>
 
-					<li><a href="<?= '?page=' . $page ?>" class="<?= $currentPage == $page ? 'active' : '' ?>"><?= ucfirst($page) ?></a></li>
+						<li><a href="<?= '?page=' . $page ?>" class="<?= $currentPage == $page ? 'active' : '' ?>"><?= ucfirst($page) ?></a></li>
 
-				<?php
-			}
+					<?php
+				}
 
-		 ?>
-	</ul>
+			 ?>
+		</ul>
+	</div>
 </header>

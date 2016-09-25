@@ -1,6 +1,6 @@
 <div class="title-container">
 	<div class="container">
-		<h1 class="title">Projects</h1>
+		<h1 class="title">References</h1>
 	</div>
 	<div class="container">
 		<p class="small copy"></p>
