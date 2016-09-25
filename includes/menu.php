@@ -15,7 +15,7 @@ if (isset($_GET['page'])) {
 
 <header>
 	<div class="container">
-		<a class="logo" href="<?= 'http://' . $_SERVER['HTTP_HOST']; ?>">Panels<sup>&copy;</sup></a>
+		<a class="logo" href="<?= 'http://' . $_SERVER['HTTP_HOST'] . '/php_menu' ?>">Panels<sup>&copy;</sup></a>
 		<ul>
 			<?php 
 
